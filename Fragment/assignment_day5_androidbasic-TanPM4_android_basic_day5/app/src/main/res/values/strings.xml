@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GST_Lesson5_Ex1_TanPM4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="song_title">Song title</string>
+    <string name="t_c_gi">Ca sĩ</string>
+    <string name="th_lo_i">Thể loại</string>
+    <string name="album">Album</string>
+    <string name="n_m_s_n_xu_t">Năm sản xuất</string>
+</resources>

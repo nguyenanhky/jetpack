@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/singger_1"
+            android:title="Đặng Tử Kỳ" />
+
+        <item
+            android:id="@+id/singger_2"
+            android:title="One Republic" />
+        <item
+            android:id="@+id/singger_3"
+            android:title="Only C, Lou Hoàng" />
+        <item
+            android:id="@+id/singger_4"
+            android:title="Bùi Anh Tuấn" />
+        <item
+            android:id="@+id/singger_5"
+            android:title="Ed Sheeran" />
+    </group>
+
+</menu>

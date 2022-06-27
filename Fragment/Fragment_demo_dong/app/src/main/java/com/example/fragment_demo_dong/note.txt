@@ -1,0 +1,21 @@
+* FragmentManager : tích hợp  vào trong mỗi activity  để giúp activity  dễ dàng
+ + add()
+ + remove()
+ + replace
+ các fragment ra khỏi vùng không gian một cách an toàn
+
+- FragmentManager được gọi qua phương thức getFragmentManager()  của activity
+
+* FragmentTransaction
+- khi đã có FragmentManager thì bắt đầu thêm sửa xóa  thay đổi các fragment dựa trên FragmentTransaction
++ để gọi FragmentTransaction thì  thông qua phương thức beginTransaction() từ FragmentManager.
+
+- FragmentTransaction có các phương thức sau
++ add()
++ remove()
++ replace()
++ addToBackStack()
+
+- commit()
+ + khi thực hiện các phương thức trên  thì phải gọi commit() cuối cùng để FragmentTransaction biết
+   sẽ bắt đầu thực hiện các transaction mà mình đã ra lệnh cho nó

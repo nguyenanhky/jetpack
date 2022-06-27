@@ -1,0 +1,23 @@
+=================== vòng đời Fragment=============
++ onCreate(): thực hiện khởi tạo fragment
++ onCreateView() : thực hiện tạo giao diện(view), trả về view là giao diện file xml tương ứng fragment
++ onCreateViewed () : thực hiện với thao tác activity vì nó đã được khởi tạo đầy đủ được gọi khay sau onCreateView
++ onActivityCreated() : thực hiện hoàn thành nốt việc khởi tạo activity và fragment. Có thể gọi fvb()
++ onStart(): thực hiện việc hiển thị fragment lên màn hình
++ onResume(): fragment chính thức hoạt động hoàn toàn
++ onPause(): fragment bị tạm dừng hoạt động, nó vẫn có thể được nhìn thấy
++ onStop(): fragment bị ẩn
++ onDestroy(): bị hủy
++ onDetach(): bị hủy hoàn toàn
+
+====
+- Sơ đồ bắt đầu khi Fragment được gắn vào Activity. Khi đó các callback onAttach(),
+  onCreate(), onCreateView(), onActivityCreated(), onStart() và onResume() lần lượt được gọi.
+
+==> Sau khi các callback trên được gọi, thì Fragment lúc bấy giờ mới chính thức được xem là đang chạy.
+- Sau đó, nếu người dùng nhấn nút Back, hay có bất kỳ thao tác gỡ/thay thế (remove/replace) Fragment ra khỏi Activity nào, thì các callback onPause(),
+  onStop(), onDestroyView(), onDestroy() và onDetach() sẽ được gọi.
+
+- Nhưng có một cái hay là, nếu Fragment được đưa vào Back Stack kèm với lệnh gỡ/thay thế,
+ thì onDestroy() và onDetach() sẽ chưa được gọi ngay. Để khi rơi vào trường hợp sau đó khi
+ Fragment này được hiển thị lại trong Back Stack, thì onCreateView() sẽ được gọi lại.

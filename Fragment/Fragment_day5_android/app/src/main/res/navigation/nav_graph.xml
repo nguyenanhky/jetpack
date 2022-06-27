@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listCardFragment">
+    <fragment
+        android:id="@+id/listCardFragment"
+        android:name="com.example.fragment_day5_android.fragment.ListCardFragment"
+        android:label="fragment_list_card"
+        tools:layout="@layout/fragment_list_card" >
+        <action
+            android:id="@+id/action_listCardFragment_to_cardInformationFragment2"
+            app:destination="@id/cardInformationFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardInformationFragment2"
+        android:name="com.example.fragment_day5_android.fragment.CardInformationFragment"
+        android:label="fragment_card_information"
+        tools:layout="@layout/fragment_card_information" >
+        <action
+            android:id="@+id/action_cardInformationFragment2_to_updateInfomationFragment"
+            app:destination="@id/updateInfomationFragment" />
+        <action
+            android:id="@+id/action_cardInformationFragment2_to_listCardFragment"
+            app:destination="@id/listCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateInfomationFragment"
+        android:name="com.example.fragment_day5_android.fragment.UpdateInfomationFragment"
+        android:label="fragment_update_infomation"
+        tools:layout="@layout/fragment_update_infomation" >
+        <action
+            android:id="@+id/action_updateInfomationFragment_to_cardInformationFragment2"
+            app:destination="@id/cardInformationFragment2" />
+    </fragment>
+</navigation>

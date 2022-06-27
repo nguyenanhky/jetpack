@@ -1,0 +1,8 @@
+what :
+fragment đóng vài trò quản lý giao diện giống  y màn hình activity
+ + fragment không phải là một thành phần quản lý giao diện độc lập như activity
+ + fragment thuộc về quản lý activity
+
+- khác với activity :
+ + fragment không phải khai báo manifest vì đây là một thành phần cơ bản của ứng dụng
+ + fragment không dùng phương thức setcontenview()

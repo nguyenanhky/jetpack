@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fistFramgment"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="Dashboard"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/secoundFragment"
+        android:icon="@drawable/ic_baseline_pie_chart_24"
+        android:title="more"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/threeFragment"
+        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:title="chart"
+        app:showAsAction="ifRoom" />
+
+</menu>

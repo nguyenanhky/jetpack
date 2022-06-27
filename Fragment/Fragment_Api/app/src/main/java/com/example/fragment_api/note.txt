@@ -1,0 +1,1 @@
+A. truyền dữ liệu giũa các các Fragment sử dụng API

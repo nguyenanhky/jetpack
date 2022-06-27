@@ -1,0 +1,14 @@
+navigation : điều hướng giữa các thành phần
++  destination chính là các thành phần như view : activity, fragmanenn( điểm đến đích )
+
+- Navigation Action : kết nối giữa các destination
+
+- Navigation Host :  thành phần biết tất cả destination và các action trong navigation graph
+  + vùng chứa trống nơi các destination được hoán đổi và khi người dùng navigation qua các ứng dụng
+  + 1 navigation phải bắt nguồn từ navhost, việc triển khai các thành phần mặc định navhost,
+    navhostFragment xử lý hoán đổi các điểm phân mảnh
+
++ app:navGraph: xác định Navigation Graph nào sẽ được liên kết với Navigation Host.
++ app:defaultNavHost: một giá trị boolean nếu thiết lập true sẽ cho phép Navigation Host chặn khi nhấn nút back hệ thống.
+
+==> nó thực hiện điều hướng giữa các destination khác nhau
